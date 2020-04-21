@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>磨叽熊猫文档</title>
+  <link rel="icon" href="_media/logo.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="磨叽熊猫文档">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./lib/vue.css">
+  <script src="./lib/docsify-plugin-codefund.js"></script>
+  <link rel="stylesheet"  href="./lib/docsify-dark-mode@0.6.1-style.css"/>
+  <style>
+    nav.app-nav li ul {
+      min-width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Loading ...</div>
+  <script>
+    window.$docsify = {
+      name: '磨叽熊猫',
+      // repo: 'https://github.com/cocosongying/doc',
+      // loadNavbar: true,
+      loadSidebar: true,
+      auto2top: true,
+      coverpage: true,
+      mergeNavbar: true,
+      noEmoji: true,
+      executeScript: true,
+      alias: {
+        // '/.*/_navbar.md': '/_navbar.md',
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      themeColor: '#3F51B5',
+      notFoundPage: '/',
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      darkMode: {
+        light: {
+          toggleBtnBg: '#42b983'
+        }
+      },
+      plugins: [
+        function (hook, vm) {
+          hook.beforeEach(function (html) {
+            return html
+              + '\n\n----\n\n'
+              + '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by docsify</a>'
+          })
+        },
+      ]
+    }
+  </script>
+  <script src="./lib/docsify.min.js"></script>
+  <script src="./lib/emoji.min.js"></script>
+  <script src="./lib/zoom-image.min.js"></script>
+  <script src="./lib/docsify-copy-code.js"></script>
+  <script src="./lib/docsify-dark-mode@0.6.1.js"></script>
+</body>
+</html>
