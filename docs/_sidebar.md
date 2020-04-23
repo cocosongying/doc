@@ -6,4 +6,6 @@
 
 - API
 
+  - [亲戚关系计算器](api/relations.md)
+
 - OTHER
