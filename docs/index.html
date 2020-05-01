@@ -41,12 +41,17 @@
           toggleBtnBg: '#42b983'
         }
       },
+      copyCode: {
+        buttonText : '点击复制',
+        errorText  : '错误',
+        successText: '已复制'
+      },
       plugins: [
         function (hook, vm) {
           hook.beforeEach(function (html) {
             return html
               + '\n\n----\n\n'
-              + '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by docsify</a>'
+              + 'Copyright © 2020 磨叽熊猫 Powered by <a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">docsify</a>'
           })
         },
       ]
