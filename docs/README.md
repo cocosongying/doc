@@ -20,4 +20,4 @@
 
 !> 如果本文档能为您得到帮助，请给予支持和鼓励！
 
-![](http://47.114.38.234/img/wxpay.jpeg ':size=200')
+![](https://mojipanda.com/img/wxpay.jpeg ':size=200')
