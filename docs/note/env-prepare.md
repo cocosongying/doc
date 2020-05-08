@@ -45,6 +45,32 @@ apt update
 
 apt install docker-ce
 ```
+
+## Mysql
+```bash
+docker pull mysql:8.0
+
+docker run -it -p 3306:3306 -v /mojipanda/docker/mysql/conf:/etc/mysql/conf.d -v /mojipanda/docker/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 --name mysql --restart=always -d mysql:8.0
+```
+
+## MongoDB
+```bash
+docker pull mongo:4.2
+
+docker run -it -p 27017:27017 -v /mojipanda/docker/mongo/conf:/data/configdb -v /mojipanda/docker/mongo/data:/data/db --name mongo --restart=always -d mongo:4.2 --auth
+
+docker exec -it mongo mongo admin
+
+> db.createUser({ user:'root',pwd:'123456',roles:[ { role:'userAdminAnyDatabase', db: 'admin'}]});
+```
+
+## Redis
+```bash
+docker pull redis:6.0
+
+docker run -it -p 6379:6379 -v /mojipanda/docker/redis/redis.conf:/etc/redis/redis.conf -v /mojipanda/docker/redis/data:/data --name redis --restart=always -d redis:6.0 redis-server --appendonly yes --requirepass "123456"
+```
+
 ## Docsify
 用于快速搭建简约文档系统，官网地址 [https://docsify.js.org/](https://docsify.js.org/)
 ```bash
