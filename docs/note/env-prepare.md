@@ -97,3 +97,12 @@ $ cd <folder>
 $ npm install
 
 ```
+
+## Vue
+```bash
+npm install -g @vue/cli
+```
+
+```bash
+vue create my-project
+```
