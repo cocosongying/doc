@@ -1,12 +1,21 @@
 <!-- docs/_sidebar.md -->
 
-- NOTE
+- 笔记
 
   - [环境准备](note/env-prepare.md)
   - [规范](note/standard.md)
 
-- API
+- 设计
 
-  - [亲戚关系计算器](api/relations.md)
+  - [亲戚关系计算器](design/relations.md)
+  - [用户模块](design/user.md)
 
-- OTHER
+- 接口
+
+  - [总览](api/main.md)
+
+- 数据库
+
+  - [MySQL](db/mysql.md)
+
+- 其他
