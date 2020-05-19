@@ -28,4 +28,4 @@
 
 !> 如果本文档能为您得到帮助，请给予支持和鼓励！
 
-![](https://mojipanda.com/img/wxpay.jpeg ':size=200')
+![](https://cdn.jsdelivr.net/gh/cocosongying/cdn-assets/common/pay_wx_v.jpg ':size=200')
