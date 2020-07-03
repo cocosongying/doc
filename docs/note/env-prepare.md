@@ -106,3 +106,10 @@ npm install -g @vue/cli
 ```bash
 vue create my-project
 ```
+
+## MinIO
+```bash
+docker pull minio/minio
+
+docker run -p 9000:9000 --name minio -v /mnt/data:/data -v /mnt/config:/root/.minio minio/minio server /data &
+```
